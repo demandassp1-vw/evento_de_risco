@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evento de Risco</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --azul-vw: #001e50;
+      --azul-medio: #0040b0;
+      --cinza-claro: #f4f6f9;
+      --texto: #1a1a2e;
+      --borda: #d0d8e8;
+    }
+
+    body {
+      background-color: var(--cinza-claro);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--texto);
+    }
+
+    header {
+      background-color: var(--azul-vw);
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    header .logo-mark {
+      width: 48px;
+      height: 48px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -1px;
+      flex-shrink: 0;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      color: #a8c4e8;
+      font-size: 0.85rem;
+      margin-top: 2px;
+      letter-spacing: 0.3px;
+    }
+
+    .intro-bar {
+      background-color: var(--azul-medio);
+      color: #fff;
+      text-align: center;
+      padding: 12px 40px;
+      font-size: 0.9rem;
+      letter-spacing: 0.4px;
+    }
+
+    .intro-bar span {
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    .step {
+      background: #ffffff;
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      margin-bottom: 32px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,30,80,0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .step:hover {
+      box-shadow: 0 4px 20px rgba(0,30,80,0.12);
+    }
+
+    .step-header {
+      background-color: var(--azul-vw);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .step-number {
+      background-color: #ffffff;
+      color: var(--azul-vw);
+      font-size: 0.75rem;
+      font-weight: 800;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      letter-spacing: 0;
+    }
+
+    .step-title {
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .step img {
+      width: 100%;
+      display: block;
+      border-top: 1px solid var(--borda);
+    }
+
+    .step-caption {
+      padding: 12px 20px;
+      font-size: 0.82rem;
+      color: #5a6a8a;
+      border-top: 1px solid var(--borda);
+      background: #f9fafc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: #8899bb;
+      border-top: 1px solid var(--borda);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 20px;
+      }
+      header h1 {
+        font-size: 1.2rem;
+      }
+      main {
+        padding: 24px 14px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-mark">VW</div>
+    <div>
+      <h1>Evento de Risco</h1>
+      <p>Volkswagen Financial Services — Guia de Abertura</p>
+    </div>
+  </header>
+
+  <div class="intro-bar">
+    <span>Passo a passo para abertura de Evento de Risco no Portal VWFS (SharePoint)</span>
+  </div>
+
+  <main>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">0</div>
+        <div class="step-title">Acesso ao Portal VWFS — Tela Inicial</div>
+      </div>
+      <img src="images/tela-inicio.png" alt="Tela inicial do Portal VWFS" />
+      <div class="step-caption">Portal VWFS no SharePoint. No menu lateral direito, acesse o link <strong>Abertura de Eventos e Deviations</strong>.</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <div class="step-title">Formulário — Dados Básicos do Evento</div>
+      </div>
+      <img src="images/ER-1.jpg" alt="Passo 1 - Dados básicos do evento" />
+      <div class="step-caption">Preencha o <strong>Título</strong>, selecione a <strong>Empresa</strong> e insira a <strong>Descrição do Evento</strong> com detalhes do ocorrido. Informe também o <strong>Impacto Financeiro</strong>.</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <div class="step-title">Formulário — Impacto Financeiro e de Imagem</div>
+      </div>
+      <img src="images/ER-2.jpg" alt="Passo 2 - Impacto financeiro e de imagem" />
+      <div class="step-caption">Selecione o nível de <strong>Impacto Financeiro</strong> (Extremo / Alto / Médio / Baixo), informe o <strong>Valor em Risco</strong> e o <strong>Impacto de Imagem</strong>.</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <div class="step-title">Formulário — Departamento e Datas</div>
+      </div>
+      <img src="images/ER-3.jpg" alt="Passo 3 - Departamento e datas" />
+      <div class="step-caption">Preencha <strong>Departamento Reporte</strong>, <strong>Departamento Responsável</strong>, <strong>Contato</strong>, <strong>Data de Detecção</strong> e <strong>Data de Ocorrência</strong>.</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <div class="step-title">Formulário — Produto e Processo</div>
+      </div>
+      <img src="images/ER-4.jpg" alt="Passo 4 - Produto e processo" />
+      <div class="step-caption">Selecione o <strong>Produto</strong> (ex: CDC), informe <strong>Evento Vinculado</strong> se houver, e o <strong>Processo</strong> (ex: Gerenciar Risco Operacional). Adicione o <strong>Plano de Ação</strong> se aplicável.</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <div class="step-title">Formulário — Plano de Ação e Perdas</div>
+      </div>
+      <img src="images/ER-5.jpg" alt="Passo 5 - Plano de ação e perdas" />
+      <div class="step-caption">Informe datas do <strong>Plano de Ação</strong>, se foi postergado e nova data, além dos campos de <strong>Perdas Financeiras</strong> (número SAP e data de contabilização).</div>
+    </div>
+
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <div class="step-title">Formulário — Riscos Sociais e Climáticos</div>
+      </div>
+      <img src="images/ER-6.jpg" alt="Passo 6 - Riscos sociais e climáticos" />
+      <div class="step-caption">Indique se houve <strong>Risco Social</strong> e/ou <strong>Risco Climático</strong>, descrevendo os identificados. Após revisar tudo, clique em <strong>Save</strong> para registrar o evento.</div>
+    </div>
+
+  </main>
+
+  <footer>
+    Volkswagen Financial Services — Uso Interno &nbsp;|&nbsp; Portal de Risco Operacional
+  </footer>
+
+</body>
+</html>
